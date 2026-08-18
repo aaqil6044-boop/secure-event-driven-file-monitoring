@@ -1,26 +1,26 @@
 # Secure Event-Driven File Monitoring
 
-An event-driven file monitoring system built using Google Cloud Platform (GCP), Google Cloud Storage, and Google Cloud Functions.
+An event-driven file monitoring project built using Google Cloud Platform (GCP), Google Cloud Storage, and Google Cloud Functions.
 
 ## Overview
 
 This project demonstrates how a serverless function can automatically respond to file upload events in a Google Cloud Storage bucket.
 
-When a file is uploaded, the Cloud Function is triggered and records information about the uploaded object for monitoring and auditing purposes.
+When a file is uploaded, the Cloud Function is triggered and records information about the uploaded file for monitoring and auditing.
 
 ## Architecture
 
 ```text
 User / Service
       |
-      | Upload file
+      | Upload File
       v
 Google Cloud Storage
       |
-      | Storage event
+      | Storage Event
       v
 Google Cloud Function
       |
-      | Log file information
+      | Log File Information
       v
 Cloud Logging
